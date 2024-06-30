@@ -25,7 +25,7 @@ const Home = () => {
         },
         {
             id: 4,
-            title: "The perfect Camera",
+            title: "The Perfect Camera",
             image: "https://images.pexels.com/photos/1983037/pexels-photo-1983037.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
             desc: "Modern films boast a vast array of camera techniques, each contributing to the storytelling.",
         },
