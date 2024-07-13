@@ -4,11 +4,12 @@ $lightGreen: #b9e7e7;
     display: flex;
     justify-content: center;
     font-family: sans-serif;
+
     //LOGIN & REGISTER 
     .container {
         width: 1024px;
 
-        .link{
+        .link {
             text-decoration: none;
             color: inherit;
         }
@@ -72,30 +73,34 @@ $lightGreen: #b9e7e7;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                
-                
+
+
 
                 .logo {
 
-                    img{
+                    img {
                         width: 80px;
                         height: 80px;
                         border-radius: 50%;
                     }
                 }
-                .links {                    
-                    display: flex;   
-                    align-items: center;  
-                    gap: 10px;   
-                    h6{
+
+                .links {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+
+                    h6 {
                         font-size: 16px;
-                        font-weight: 300 ;
-                    } 
-                    span{
+                        font-weight: 300;
+                    }
+
+                    span {
                         cursor: pointer;
                         font-weight: 600;
                     }
-                    .write{
+
+                    .write {
 
                         background-color: $lightGreen;
                         width: 50px;
@@ -107,7 +112,7 @@ $lightGreen: #b9e7e7;
                         font-weight: 300;
                         border: 1px solid white;
 
-                        &:hover{
+                        &:hover {
                             background-color: white;
                             border: 1px solid teal;
                             color: teal;
@@ -118,7 +123,7 @@ $lightGreen: #b9e7e7;
             }
         }
 
-        .footer{
+        .footer {
             margin-top: 100px;
             padding: 20px;
             display: flex;
@@ -128,38 +133,40 @@ $lightGreen: #b9e7e7;
             font-size: 12px;
             font-style: italic;
             font-weight: 550;
-            img{
+
+            img {
                 width: 50px;
                 height: 50px;
                 border-radius: 50%;
             }
-        
+
         }
 
         //HOME
 
-        .home{
+        .home {
 
-            .posts{
+            .posts {
 
                 margin-top: 50px;
                 display: flex;
                 flex-direction: column;
                 gap: 150px;
 
-                .post{
+                .post {
 
                     display: flex;
                     gap: 100px;
 
-                    &:nth-child(2n+1){
+                    &:nth-child(2n+1) {
                         flex-direction: row-reverse;
                     }
 
-                    .img{
+                    .img {
                         flex: 2;
                         position: relative;
-                        &::after{
+
+                        &::after {
                             content: "";
                             width: 100%;
                             height: 100%;
@@ -170,7 +177,7 @@ $lightGreen: #b9e7e7;
                             z-index: -1;
                         }
 
-                        img{
+                        img {
                             width: 100%;
                             max-height: 400px;
                             object-fit: fill;
@@ -178,21 +185,21 @@ $lightGreen: #b9e7e7;
                         }
                     }
 
-                    .content{
+                    .content {
                         flex: 3;
                         display: flex;
                         flex-direction: column;
                         justify-content: space-between;
-                        
-                        h1{
+
+                        h1 {
                             font-size: 48px;
                         }
 
-                        p{
+                        p {
                             font-size: 18px;
                         }
 
-                        button{
+                        button {
                             width: max-content;
                             cursor: pointer;
                             border: none;
@@ -201,23 +208,112 @@ $lightGreen: #b9e7e7;
                             background-color: white;
                             border: 1px solid teal;
 
-                            &:hover{
+                            &:hover {
                                 background-color: teal;
                                 color: black;
                                 border: 1px solid white;
                             }
-                        
-                    
+                        }
+                    }
+                }
+            }
+        }
+
+        .single {
+            display: flex;
+            gap: 50px;
+
+            .content {
+                flex: 5;
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+
+                img {
+                    width: 100%;
+                    height: 380px;
+                    object-fit: cover;
+                }
+
+                .user {
+                    display: inline-flex;
+                    align-items: center;
+                    gap: 30px;
+                    font-size: 15px;
+
+                    .user-data {
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+
+                        img {
+                            width: 50px;
+                            height: 50px;
+                            border-radius: 50%;
+                            object-fit: cover;
+                        }
+
+                        .info {
+                            display: flex;
+                            flex-direction: column;
+
+                            .username {
+                                span {
+                                    font-weight: bold;
+                                }
+                            }
+
+                            .edit-time {
+                                span {
+                                    font-size: 10px;
+                                }
+                            }
 
                         }
                     }
 
-                    
-                }  
+                    .edit {
+                        display: flex;
+                        gap: 10px;
+                        cursor: pointer;
+
+                        .edit-icon {
+                            height: 20px;
+                            width: 20px;
+                        }
+
+                        .delete-icon {
+                            height: 21px;
+                            width: 21px;
+                        }
+
+                    }
+                }
+
+                .post-body {
+
+                    h1 {
+                        font-size: 42px;
+                        color: #333;
+                    }
+
+                    p {
+                        text-align: justify;
+                        line-height: 30px;
+                    }
+                }
+
+
+
+
             }
 
+            .menu {
+                flex: 2;
 
+            }
         }
+
 
 
 
